@@ -384,8 +384,8 @@ refactor_files() {
         ;;
     a311d | khadas-vim3)
         FDTFILE="meson-g12b-a311d-khadas-vim3.dtb"
-        UBOOT_OVERLOAD="VIM3.u-boot.sd.bin"
-        MAINLINE_UBOOT=""
+        UBOOT_OVERLOAD="u-boot-gtkingpro.bin"
+        MAINLINE_UBOOT="/lib/u-boot/VIM3.u-boot.sd.bin"
         ANDROID_UBOOT=""
         AMLOGIC_SOC="a311d"
         ;;
