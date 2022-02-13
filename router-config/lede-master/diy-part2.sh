@@ -64,3 +64,5 @@ git clone https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-th
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/lean/luci-app-adguardhome
 git clone https://github.com/vernesong/OpenClash.git package/lean/luci-app-openclash
 git clone https://github.com/jerrykuku/lua-maxminddb.git package/lean/lua-maxminddb
+git clone https://github.com/jerrykuku/luci-app-go-aliyundrive-webdav.git package/lean/luci-app-go-aliyundrive-webdav
+git clone https://github.com/jerrykuku/go-aliyundrive-webdav.git package/lean/go-aliyundrive-webdav

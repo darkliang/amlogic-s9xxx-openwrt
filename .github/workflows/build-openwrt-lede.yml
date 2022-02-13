@@ -10,11 +10,6 @@ name: Build OpenWrt lede
 on:
   repository_dispatch:
   workflow_dispatch:
-    inputs:
-      more_settings:
-        description: "More parameter settings"
-        required: false
-        default: ""
   #schedule:
     #- cron: '0 17 * * 0'
   push:
