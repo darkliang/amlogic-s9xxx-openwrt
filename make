@@ -55,7 +55,7 @@ kernel_path="${amlogic_path}/amlogic-kernel"
 uboot_path="${amlogic_path}/amlogic-u-boot"
 configfiles_path="${amlogic_path}/common-files"
 op_release="etc/flippy-openwrt-release" # Add custom openwrt firmware information
-build_openwrt=("s922x" "s922x-n2" "s922x-reva" "s905x3" "s905x2" "s912" "s912-t95z" "s905" "s905d" "s905d-ki" "s905x" "s905w")
+build_openwrt=("a311d" "s922x" "s922x-n2" "s922x-reva" "s905x3" "s905x2" "s912" "s912-t95z" "s905" "s905d" "s905d-ki" "s905x" "s905w")
 #
 # Latest kernel download repository
 kernel_repo="https://github.com/ophub/kernel/tree/main/pub"
@@ -381,6 +381,13 @@ refactor_files() {
         MAINLINE_UBOOT=""
         ANDROID_UBOOT=""
         AMLOGIC_SOC="s922x"
+        ;;
+    a311d | khadas-vim3)
+        FDTFILE="meson-g12b-a311d-khadas-vim3.dtb"
+        UBOOT_OVERLOAD="u-boot-gtkingpro.bin"
+        MAINLINE_UBOOT="/lib/u-boot/odroid-n2-u-boot.bin.sd.bin"
+        ANDROID_UBOOT=""
+        AMLOGIC_SOC="a311d"
         ;;
     *)
         error_msg "Have no this firmware: [ ${soc} - ${kernel} ]"
