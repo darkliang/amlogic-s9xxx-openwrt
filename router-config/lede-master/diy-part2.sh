@@ -65,4 +65,4 @@ git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/lean
 git clone https://github.com/vernesong/OpenClash.git package/lean/luci-app-openclash
 git clone https://github.com/jerrykuku/lua-maxminddb.git package/lean/lua-maxminddb
 svn co https://github.com/messense/aliyundrive-webdav/trunk/openwrt package/lean/
-https://github.com/esirplayground/luci-app-poweroff.git package/lean/luci-app-poweroff
+git clone https://github.com/esirplayground/luci-app-poweroff.git package/lean/luci-app-poweroff
