@@ -64,3 +64,4 @@ git clone https://github.com/jerrykuku/luci-app-vssr.git package/lean/luci-app-v
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/lean/luci-app-adguardhome
 git clone https://github.com/vernesong/OpenClash.git package/lean/luci-app-openclash
 git clone https://github.com/jerrykuku/lua-maxminddb.git package/lean/lua-maxminddb
+svn co https://github.com/messense/aliyundrive-webdav/trunk/openwrt package/lean/
