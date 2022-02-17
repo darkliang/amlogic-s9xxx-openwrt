@@ -9,7 +9,7 @@
 # ------------------------------- Main source started -------------------------------
 #
 # Modify default theme（FROM uci-theme-bootstrap CHANGE TO luci-theme-material）
-sed -i 's/luci-theme-bootstrap/luci-theme-material/g' ./feeds/luci/collections/luci/Makefile
+sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' ./feeds/luci/collections/luci/Makefile
 
 # Add autocore support for armvirt
 sed -i 's/TARGET_rockchip/TARGET_rockchip\|\|TARGET_armvirt/g' package/lean/autocore/Makefile
@@ -59,8 +59,10 @@ svn co https://github.com/hubutui/p7zip-lede/trunk package/p7zip
 
 git clone https://github.com/jerrykuku/luci-app-ttnode.git package/lean/luci-app-ttnode
 git clone https://github.com/jerrykuku/luci-app-vssr.git package/lean/luci-app-vssr
-# rm -rf package/lean/luci-theme-argon
-# git clone https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
+rm -rf package/lean/luci-theme-argon
+git clone -b 18.06  https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
+svn co https://github.com/jerrykuku/luci-app-argon-config/trunk package/luci-app-argon-config
+
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/lean/luci-app-adguardhome
 git clone https://github.com/vernesong/OpenClash.git package/lean/luci-app-openclash
 git clone https://github.com/jerrykuku/lua-maxminddb.git package/lean/lua-maxminddb
