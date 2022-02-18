@@ -320,7 +320,6 @@ confirm_version() {
         UBOOT_OVERLOAD="u-boot-gtkingpro.bin"
         MAINLINE_UBOOT="/lib/u-boot/VIM3.u-boot.sd.bin"
         ANDROID_UBOOT=""
-        AMLOGIC_SOC="a311d"
         ;;
     *)
         error_msg "Have no this firmware: [ ${soc} - ${kernel} ]"
