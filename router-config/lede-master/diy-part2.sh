@@ -55,6 +55,7 @@ svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/
 # ------------------------------- Other ends -------------------------------
 
 git clone https://github.com/jerrykuku/luci-app-vssr.git package/lean/luci-app-vssr
+git clone https://github.com/jerrykuku/lua-maxminddb.git package/lean/lua-maxminddb
 rm -rf package/lean/luci-theme-argon
 git clone -b 18.06  https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
 svn co https://github.com/jerrykuku/luci-app-argon-config/trunk package/luci-app-argon-config
