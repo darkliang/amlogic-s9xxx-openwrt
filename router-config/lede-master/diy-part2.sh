@@ -19,7 +19,7 @@ sed -i "s|DISTRIB_REVISION='.*'|DISTRIB_REVISION='R$(date +%Y.%m.%d)'|g" package
 echo "DISTRIB_SOURCECODE='lede'" >>package/base-files/files/etc/openwrt_release
 
 # Modify default IP（FROM 192.168.1.1 CHANGE TO 192.168.31.4）
-# sed -i 's/192.168.1.1/192.168.31.4/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.1.20/g' package/base-files/files/bin/config_generate
 
 # Modify default root's password（FROM 'password'[$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.] CHANGE TO 'your password'）
 # sed -i 's/root::0:0:99999:7:::/root:$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.:0:0:99999:7:::/g' /etc/shadow
@@ -54,3 +54,12 @@ svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/
 #
 # ------------------------------- Other ends -------------------------------
 
+git clone https://github.com/jerrykuku/luci-app-vssr.git package/lean/luci-app-vssr
+rm -rf package/lean/luci-theme-argon
+git clone -b 18.06  https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
+svn co https://github.com/jerrykuku/luci-app-argon-config/trunk package/luci-app-argon-config
+
+git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/lean/luci-app-adguardhome
+git clone https://github.com/vernesong/OpenClash.git package/lean/luci-app-openclash
+git clone https://github.com/jerrykuku/lua-maxminddb.git package/lean/lua-maxminddb
+svn co https://github.com/messense/aliyundrive-webdav/trunk/openwrt package/lean/git clone https://github.com/esirplayground/luci-app-poweroff.git package/lean/luci-app-poweroff
