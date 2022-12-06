@@ -61,5 +61,3 @@ svn co https://github.com/jerrykuku/luci-app-argon-config/trunk package/luci-app
 
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/lean/luci-app-adguardhome
 git clone https://github.com/vernesong/OpenClash.git package/lean/luci-app-openclash
-git clone https://github.com/jerrykuku/lua-maxminddb.git package/lean/lua-maxminddb
-svn co https://github.com/messense/aliyundrive-webdav/trunk/openwrt package/lean/git clone https://github.com/esirplayground/luci-app-poweroff.git package/lean/luci-app-poweroff
